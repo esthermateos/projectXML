@@ -31,10 +31,10 @@ public class SampleAction implements IWorkbenchWindowActionDelegate {
 	 */
 	public void run(IAction action) {
 		String name = "SGSDEP_ENS";
-		String ruta = "SGSDEP_ENS";
+		String ruta = "C:/pruebasXML";
 		//String name = "SCU_CRECAR_ENS";
 		CreateconfigurationXML createconfigurationXML = new CreateconfigurationXML();
-		createconfigurationXML.getConfigurationXML(name);
+		createconfigurationXML.getConfigurationXML(name, ruta);
 		
 	}
 

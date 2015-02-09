@@ -4,8 +4,9 @@ import org.eclipse.jface.action.IAction;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.IWorkbenchWindowActionDelegate;
-import org.eclipse.jface.dialogs.MessageDialog;
-import com.isb.vega.generator.xml.configuration.*;
+
+import com.isb.bks.provider.information.provider.GenericProjectInformationProvider;
+
 
 /**
  * Our sample action implements workbench action delegate.
@@ -31,11 +32,9 @@ public class SampleAction implements IWorkbenchWindowActionDelegate {
 	 */
 	public void run(IAction action) {
 		String name = "SGSDEP_ENS";
-		String ruta = "C:/pruebasXML";
-		//String name = "SCU_CRECAR_ENS";
-		CreateconfigurationXML createconfigurationXML = new CreateconfigurationXML();
-		createconfigurationXML.getConfigurationXML(name, ruta);
-		
+		String ruta = "/pruebasXML/";
+		GenericProjectInformationProvider genericProjectInformationProvider= new GenericProjectInformationProvider();
+		genericProjectInformationProvider.writeXMLCongifuration(name, ruta);
 	}
 
 	/**

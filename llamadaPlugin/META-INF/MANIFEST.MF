@@ -6,8 +6,6 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: llamadaplugin.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
- com.isb.vega.externalization.generator.xml;bundle-version="1.0.0",
- com.isb.vega.generator.xml;bundle-version="1.0.0",
- com.isb.vega.generator.xml.model;bundle-version="0.1.0"
+ com.isb.bks.provider.information
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
